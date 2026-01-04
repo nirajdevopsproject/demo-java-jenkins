@@ -21,7 +21,7 @@ pipeline{
    			steps{
           			sh """
            			echo "========Building the Docker Image ============"
-           			docker build -t $IMAGE_NAME:'${env.BUILD_NUMBER}' .//https://spacelift.io/blog/jenkins-environment-variables go to this
+           			docker build -t $IMAGE_NAME:"${env.BUILD_NUMBER}" .//https://spacelift.io/blog/jenkins-environment-variables go to this
            			echo "====== Building Image Completed ====="
          			"""      
    			} 
