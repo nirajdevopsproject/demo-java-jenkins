@@ -2,7 +2,7 @@ pipeline{
 	agent any
 	parameters{
 		//string(name:"DEPLOY_ENV",defaultValue:"development",description:"Select the target environment")
-		string(name:"APP_VERSION",description:"Provide the version of the app")
+		//string(name:"APP_VERSION",description:"Provide the version of the app")
 	}
 	environment{
 		IMAGE_NAME="nirajvishwa894/restapi"
